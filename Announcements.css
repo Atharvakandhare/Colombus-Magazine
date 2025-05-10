@@ -1,0 +1,182 @@
+/* General Styling */
+.announcements-page {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+  }
+  
+  /* Navbar Styling */
+  .header {
+    display: flex;
+    justify-content: center;
+    background-color: #323136;
+    padding: 10px 20px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background-color: lightblue;
+    border: 1px solid #0093d1;
+    color: #333;
+    padding: 6px 14px;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px; /* Smaller buttons */
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #0093d1;
+    color: white;
+  }
+  
+  .nav-button.active {
+    background-color: #4682b4;
+    color: white;
+  }
+  
+  /* Announcements Table Styling */
+  .announcements-content {
+    margin-top: 20px;
+  }
+  
+  .announcements-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .announcements-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .announcements-table th {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  
+  .announcements-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .announcements-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Status Box */
+  .submitted-box {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .not-submitted-box {
+    color: #f44336;
+    font-weight: bold;
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .submit-button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+  }
+  
+  /* Popup */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(63, 59, 59, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-container {
+    background: rgb(200, 194, 194);
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    position: relative;
+  }
+  
+  .popup-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* File Upload */
+  .file-upload-section {
+    margin-top: 20px;
+  }
+  
+  .file-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .remove-file-button {
+    background: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-file-button {
+    background-color: #0b0e0b;
+    color: rgb(197, 185, 185);
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-file-button:hover {
+    background-color: #45a049;
+  }
+  
+  .submit-file-button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+  }
+  

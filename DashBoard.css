@@ -1,0 +1,165 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #bfa7dc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #323136;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img-container {
+  position: relative;
+}
+
+.profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-options {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: none;
+  background-color: #555;
+  padding: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.profile-options .profile-option {
+  background-color: #ef4595;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.profile-options .profile-option:hover {
+  background-color: #d12d80;
+}
+
+.profile-img-container:hover .profile-options {
+  display: flex;
+}
+
+.welcome-text {
+  font-size: 18px;
+  color: #f2dede;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 530px
+}
+
+/* Navbar Styling */
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #555;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.text-content {
+  max-width: 50%;
+}
+
+.columbus-title {
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 100px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  text-transform: uppercase;
+
+}
+
+.paragraph {
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  color: #23711f;
+  margin: 0;
+  text-transform: uppercase;
+}
+/* Image Content */
+.image-content {
+  position: relative;
+}
+
+.image-content img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Carousel Buttons */
+.carousel-buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-buttons button {
+  background-color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #bcdf5d;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.carousel-buttons button:hover {
+  background-color: #555555;
+}
+
+/* Button Styling */
+.carousel-buttons button:focus {
+  outline: none;
+}

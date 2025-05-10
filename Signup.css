@@ -1,0 +1,227 @@
+/* Signup Page */
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;  /* Ensure the background is dark */
+    color: white;
+    font-family: "Arial", sans-serif;
+}
+
+/* Signup Container */
+.signup-container {
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Information Section (70%) */
+.info-section {
+    flex: 70%;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #bbbbbb;
+}
+
+/* Action Section (30%) */
+.action-section {
+    flex: 30%;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    transition: transform 0.5s ease;
+    overflow-y: auto;
+    height: 100%;
+}
+
+/* Buttons */
+.student-button,
+.admin-button {
+    width: 80%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.student-button {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.admin-button {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.student-button:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+.admin-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Signup Form */
+.signup-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Custom Scrollbar */
+.signup-form::-webkit-scrollbar {
+    width: 8px;
+}
+
+.signup-form::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.signup-form::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.signup-form label {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: #bbbbbb;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #333333;
+    color: white;
+    outline: none;
+}
+
+.signup-form input::placeholder,
+.signup-form select::placeholder {
+    color: #bbbbbb;
+}
+
+.signup-form input:focus,
+.signup-form select:focus {
+    background-color: #444444;
+}
+
+.submit-button {
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #28a745; /* Green */
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Animation for transitioning between 70:30 and 100% */
+.action-section.full-width {
+    flex: 100%;
+    transition: flex 0.5s ease;
+}
+
+/* Hide info-section during login */
+.info-section.hidden {
+    display: none;
+}
+
+/* Text for Switching Between Forms */
+.toggle-text {
+    margin-top: 1rem;
+    color: #bbbbbb;
+    font-size: 1rem;
+}
+
+.toggle-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle-link:hover {
+    color: #0056b3;
+}
+
+/* Password Field Container */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    padding-right: 30px; /* Space for the eye icon */
+}
+
+/* Eye Icon Styles */
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bbbbbb;
+    cursor: pointer;
+}
+
+.eye-icon:hover {
+    color: white;
+}
+
+/* Back Button */
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: transparent;
+    border: none;
+    color: #bbbbbb;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: white;
+}
